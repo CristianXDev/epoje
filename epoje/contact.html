@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoje - Innovación Educativa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-epoje fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-epoje" href="#">epoje</a>
+
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link nav-link-modern px-3" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-modern px-3" href="about.html">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-modern px-3" href="contact.html">Contáctanos</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="login.html" href="nav-link">
+                            <button class="btn btn-nav px-4 py-2">Iniciar sesión</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section class="section-padding bg-light mt-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="pe-lg-4">
+                        <h6 class="text-primary fw-bold text-uppercase mb-3">Hablemos</h6>
+                        <h2 class="display-5 fw-bold text-dark mb-4">¿Tienes dudas sobre tu proyecto?</h2>
+                        <p class="text-muted mb-5">
+                            Ya sea que estés iniciando tu tesis o necesites una revisión final, estoy aquí para asesorarte. Agenda una consulta diagnóstica presencial u online.
+                        </p>
+
+                        <div class="d-flex mb-4 align-items-center p-3 bg-white rounded-4 shadow-sm hover-lift">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                <i class="bi bi-geo-alt text-primary fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Ubicación Oficina</h6>
+                                <p class="mb-0 small text-muted">Av. Francisco de Miranda, Torre Empresarial, Piso 8.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4 align-items-center p-3 bg-white rounded-4 shadow-sm hover-lift">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                <i class="bi bi-whatsapp text-primary fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">WhatsApp Directo</h6>
+                                <p class="mb-0 small text-muted">+58 412 1234567</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4 align-items-center p-3 bg-white rounded-4 shadow-sm hover-lift">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                <i class="bi bi-envelope-at text-primary fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Correo Electrónico</h6>
+                                <p class="mb-0 small text-muted">contacto@epoje.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-lg border-top border-primary border-5">
+                        <form action="#">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold text-dark">Nombre Completo</label>
+                                    <input type="text" class="form-control form-control-lg bg-light border-0 fs-6" placeholder="Ej. Juan Pérez">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold text-dark">Correo Electrónico</label>
+                                    <input type="email" class="form-control form-control-lg bg-light border-0 fs-6" placeholder="nombre@correo.com">
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label small fw-bold text-dark">Asunto / Especialidad</label>
+                                    <select class="form-select form-select-lg bg-light border-0 fs-6">
+                                        <option selected>Asesoría de Tesis</option>
+                                        <option>Corrección de Estilo</option>
+                                        <option>Metodología</option>
+                                        <option>Otros</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label small fw-bold text-dark">Tu mensaje</label>
+                                    <textarea class="form-control bg-light border-0 fs-6" rows="4" placeholder="Cuéntame un poco sobre tu investigación..."></textarea>
+                                </div>
+                                <div class="col-md-12 pt-3">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-bold shadow">
+                                        Enviar Mensaje <i class="bi bi-send ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer style="height:400px;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="navbar-brand-epoje text-white">epoje</h5>
+                    <p class="pe-lg-5">Liderando la transformación de la investigación académica mediante neurociencia y fenomenología.</p>
+                    <div class="d-flex gap-3 fs-5 mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#valores">Valores</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Asesoría de Tesis</a></li>
+                        <li><a href="#">Proyectos I+D</a></li>
+                        <li><a href="#">Neurodidáctica</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contacto</h5>
+                    <p class="mb-1"><i class="bi bi-geo-alt me-2"></i> San Mateo, Venezuela</p>
+                    <p class="mb-1"><i class="bi bi-envelope me-2"></i> contacto@epoje.com</p>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="text-center small">
+                <p>&copy; 2026 Epoje Consultoría Académica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
