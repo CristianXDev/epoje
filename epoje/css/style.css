@@ -4,7 +4,11 @@
     --accent-blue: #0061ff;
 }
 
-body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+html, body {
+    font-family: 'Inter', sans-serif; 
+    overflow-x: hidden;
+    width: 100%;
+}
 
 /* --- NAVBAR --- */
 .navbar-epoje {
@@ -122,4 +126,18 @@ footer a:hover { color: #fff; }
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+
+.transition-base {
+    transition: all 0.3s ease-in-out;
+}
+.shadow-hover:hover {
+    transform: translateY(-10px); /* Eleva la carta */
+    shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; /* Sombra más profunda */
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1) !important;
+}
+
+.bg-white{
+    background-color:#FFF;
 }

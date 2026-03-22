@@ -7,120 +7,128 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-epoje fixed-top" id="mainNav">
+    <div class="container-fluid">
+        <a class="navbar-brand navbar-brand-epoje" href="#">epoje</a>
 
-    <nav class="navbar navbar-expand-lg navbar-epoje fixed-top" id="mainNav">
-        <div class="container-fluid">
-            <a class="navbar-brand navbar-brand-epoje" href="#">epoje</a>
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
 
-            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto align-items-center">
-                   <li class="nav-item"><a class="nav-link nav-link-modern px-3" href="index.html">Inicio</a></li>
-                   <li class="nav-item"><a class="nav-link nav-link-modern px-3" href="about.html">Sobre mí</a></li>
-                   <li class="nav-item"><a class="nav-link nav-link-modern px-3" href="contact.html">Contáctanos</a></li>
-                   <li class="nav-item ms-lg-3">
-                    <a href="login.html" href="nav-link">
-                        <button class="btn btn-nav px-4 py-2">Iniciar sesión</button>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto align-items-center">
+               <li class="nav-item"><a class="nav-link nav-link-modern px-3" href="index.html">Inicio</a></li>
+               <li class="nav-item"><a class="nav-link nav-link-modern px-3" href="about.html">Sobre mí</a></li>
+               <li class="nav-item"><a class="nav-link nav-link-modern px-3" href="contact.html">Contáctanos</a></li>
+               <li class="nav-item ms-lg-3">
+                <a href="login.html" href="nav-link">
+                    <button class="btn btn-nav px-4 py-2">Iniciar sesión</button>
+                </a>
+            </li>
+        </ul>
     </div>
+</div>
 </nav>
 
 <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHJueGZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKSjPQC1Q7UsC8E/giphy.gif')">
+        <div class="carousel-item active" style="background-image: url('img/background/hero-2.png')">
             <div class="carousel-overlay"></div>
-            <div class="carousel-caption d-none d-md-block">
-                <h2>Aprende sin límites</h2>
-                <p class="fs-4">La plataforma educativa que se adapta a tu ritmo.</p>
+            <div class="carousel-caption">
+                <h2 class="display-4 fw-bold">Asesoría de Tesis</h2>
+                <p class="fs-5 fs-md-4">Transforma tus ideas en proyectos de investigación sólidos.</p>
             </div>
         </div>
-        <div class="carousel-item" style="background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/l41lTfX8VycN7F4pG/giphy.gif')">
+
+        <div class="carousel-item" style="background-image: url('img/background/hero-1.png')">
             <div class="carousel-overlay"></div>
-            <div class="carousel-caption d-none d-md-block">
-                <h2>Tecnología y Futuro</h2>
-                <p class="fs-4">Domina las herramientas del mañana, hoy.</p>
+            <div class="carousel-caption">
+                <h2 class="display-4 fw-bold">Excelencia Docente</h2>
+                <p class="fs-5 fs-md-4">Formación académica con los mejores especialistas.</p>
             </div>
         </div>
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
     </button>
 </div>
-
-<section id="que-hacemos" class="section-padding bg-white">
+<section id="que-hacemos" class="section-padding bg-white overflow-hidden">
     <div class="container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
             <h6 class="text-primary fw-bold text-uppercase mb-3">Nuestra Labor</h6>
             <h2 class="display-5 fw-extrabold" style="font-weight: 800;">¿Qué hacemos en Epoje?</h2>
             <p class="lead text-muted mx-auto" style="max-width: 700px;">Transformamos el caos de la investigación en un proceso estructurado, lógico y libre de bloqueos mentales.</p>
         </div>
 
         <div class="row g-4">
-            <div class="col-md-4">
-                <div class="p-4 h-100 border-0 shadow-sm card-value text-center">
-                    <div class="icon-box mx-auto mb-4 bg-primary text-white">
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center shadow-hover transition-base">
+                    <div class="icon-box mx-auto mb-4 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                         <i class="bi bi-journal-check fs-3"></i>
                     </div>
                     <h4 class="fw-bold">Asesoría de Tesis</h4>
                     <p class="text-muted small">Acompañamiento desde la elección del tema hasta la defensa final, aplicando normas APA 7 y rigor científico.</p>
+                    <a href="#" class="stretched-link"></a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="p-4 h-100 border-0 shadow-sm card-value text-center">
-                    <div class="icon-box mx-auto mb-4 bg-dark text-white">
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center shadow-hover transition-base">
+                    <div class="icon-box mx-auto mb-4 bg-dark text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                         <i class="bi bi-lightbulb fs-3"></i>
                     </div>
                     <h4 class="fw-bold">Corrección Estructural</h4>
                     <p class="text-muted small">Analizamos la coherencia de tu discurso, la lógica de tus objetivos y la solidez de tu metodología.</p>
+                    <a href="#" class="stretched-link"></a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="p-4 h-100 border-0 shadow-sm card-value text-center">
-                    <div class="icon-box mx-auto mb-4 bg-primary text-white">
-                        <i class="bi bi-brain fs-3"></i>
+
+            <div class="col-md-4" data-aos="fade-left" data-aos-delay="500">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center shadow-hover transition-base">
+                    <div class="icon-box mx-auto mb-4 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                        <i class="bi bi-cpu fs-3"></i>
                     </div>
                     <h4 class="fw-bold">Neurodidáctica</h4>
                     <p class="text-muted small">Estrategias basadas en ciencia para superar el "miedo a la hoja en blanco" y potenciar tu escritura académica.</p>
+                    <a href="#" class="stretched-link"></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="sobre-mi" class="section-padding bg-light">
+<section id="sobre-mi" class="section-padding bg-light overflow-hidden">
     <div class="container">
         <div class="row g-5 align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-5" data-aos="fade-right">
                 <div class="position-relative">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" 
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800" 
                     alt="Docente Epoje" 
                     class="img-fluid rounded-4 shadow-lg">
-                    <div class="position-absolute bottom-0 start-0 bg-primary text-white p-3 rounded-end shadow" style="margin-bottom: 20px;">
+                    <div class="position-absolute bottom-0 start-0 bg-primary text-white p-3 rounded-end shadow" style="margin-bottom: 20px;" data-aos="zoom-in" data-aos-delay="300">
                         <h5 class="mb-0 fw-bold">10+ Años</h5>
                         <p class="small mb-0">Asesorando investigadores</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="fade-left">
                 <h6 class="text-primary fw-bold text-uppercase mb-3">El Mentor Detrás de la Pantalla</h6>
                 <h2 class="display-5 fw-extrabold mb-4" style="font-weight: 800;">Hola, soy tu Facilitador</h2>
                 <p class="lead text-dark fw-bold">"Mi misión es que la academia deje de ser un peso y se convierta en una herramienta de transformación personal."</p>
-                <p class="text-muted">Como especialista en metodología y fenomenología, he dedicado mi carrera a simplificar los procesos de investigación. Mi enfoque no es solo corregir palabras, sino enseñarte a pensar de forma crítica y sistemática a través de la <strong>Epojé</strong> (suspensión del juicio).</p>
+                <p class="text-muted">Como especialista en metodología y fenomenología, he dedicado mi carrera a simplificar los procesos de investigación...</p>
                 
                 <div class="row g-4 mt-2">
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="d-flex align-items-center">
                             <i class="bi bi-patch-check text-primary fs-3 me-3"></i>
                             <div>
@@ -129,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="d-flex align-items-center">
                             <i class="bi bi-mortarboard text-primary fs-3 me-3"></i>
                             <div>
@@ -139,17 +147,12 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="mt-5">
-                    <button class="btn btn-dark px-4 py-2 me-3 shadow-sm">Conocer mi trayectoria</button>
-                    <a href="#comunicacion-seccion" class="text-primary fw-bold text-decoration-none small">Hablemos por chat <i class="bi bi-arrow-right ms-2"></i></a>
-                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="nosotros" class="section-padding bg-white">
+<section id="nosotros" class="section-padding bg-white overflow-hidden">
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
@@ -159,125 +162,128 @@
                 <p class="text-muted">Nos comprometemos a potenciar las capacidades neurocognitivas de nuestros asesorados, garantizando rigor científico y claridad fenomenológica.</p>
             </div>
             <div class="col-lg-6">
-                <div class="p-5 bg-light rounded-4 border-start border-primary border-5">
+                <div class="p-5 bg-light rounded-4 border-start border-primary border-5 shadow-sm">
                     <h2 class="fw-bold mb-4">Visión 2030</h2>
                     <p class="fs-5 italic text-dark">"Consolidarnos como la consultora académica líder a nivel internacional, reconocida por transformar la cultura de la investigación a través de la holodidáctica y la neurociencia."</p>
-                    <p class="mb-0 text-muted">Aspiramos a ser el referente ético donde la suspensión del juicio sea la clave para el éxito de los futuros doctores.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="valores" class="section-padding bg-light">
-    <div class="container text-center">
-        <h6 class="text-primary fw-bold text-uppercase mb-3">Pilares Educativos</h6>
-        <h2 class="display-6 fw-bold mb-5">Valores Institucionales</h2>
-        <div class="row g-4 text-start">
-            <div class="col-md-6 col-lg-3">
-                <div class="card card-value p-4">
-                    <div class="icon-box"><i class="bi bi-shield-check fs-3"></i></div>
-                    <h5>Rigor Epistémico</h5>
-                    <p class="small text-muted">Compromiso inquebrantable con la verdad científica y la solidez de las fuentes.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card card-value p-4">
-                    <div class="icon-box"><i class="bi bi-eye fs-3"></i></div>
-                    <h5>Neutralidad</h5>
-                    <p class="small text-muted">Abordar cada investigación desde una perspectiva pura (Epojé), sin prejuicios.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card card-value p-4">
-                    <div class="icon-box"><i class="bi bi-cpu fs-3"></i></div>
-                    <h5>Holodidáctica</h5>
-                    <p class="small text-muted">Proceso integral que conecta al investigador, su cerebro y su entorno.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card card-value p-4">
-                    <div class="icon-box"><i class="bi bi-mortarboard fs-3"></i></div>
-                    <h5>Ética Profesional</h5>
-                    <p class="small text-muted">Respeto absoluto a la propiedad intelectual y crecimiento del tesista.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="my-5 pb-5 pt-2 fade-in-up">
-    <div class="container">
-        <div class="bg-primary p-5 rounded-4 text-center text-white shadow-lg">
-            <h2 class="display-6 fw-bold mb-3">¿Tu tesis está estancada?</h2>
-            <p class="lead opacity-75 mb-4">No dejes que el tiempo pase. Vamos a darle la estructura que necesita hoy mismo.</p>
-            <a href="https://wa.me/58XXXXXXXXXX" class="btn btn-light btn-lg rounded-pill px-5 fw-bold hover-lift">
-                Agendar Consultoría Gratuita
-            </a>
-        </div>
-    </div>
-</section>
-
-<section id="progreso-dashboard" class="section-padding bg-white">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-4">
-                <h6 class="text-primary fw-bold text-uppercase mb-3">Gestión Inteligente</h6>
-                <h2 class="display-5 fw-extrabold mb-4" style="font-weight: 800;">Tu Progreso</h2>
-                <p class="lead text-muted">Visualiza el avance de tu investigación de forma transparente. Nuestro dashboard te permite conocer el estado exacto de tus correcciones sin necesidad de intermediarios.</p>
-                <p class="text-muted small"><i class="bi bi-info-circle me-1"></i> Actualizado en tiempo real por tu asesor asignado.</p>
-            </div>
-
-            <div class="col-lg-8">
-                <div class="card border-0 shadow p-4 h-100 bg-light">
-                    <div class="d-flex justify-content-between align-items-center mb-4">
-                        <h5 class="fw-bold mb-0"><i class="bi bi-activity me-2 text-primary"></i>Estado de Corrección</h5>
-                        <span class="badge bg-primary px-3 py-2 rounded-pill">En Proceso</span>
+                    <p class="mb-0 text-muted">Aspiramos a ser el referente ético donde la suspensión del juicio sea 
                     </div>
-                    <div class="progress mb-3" style="height: 10px;">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 65%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="valores" class="section-padding bg-light overflow-hidden">
+        <div class="container text-center">
+            <h6 class="text-primary fw-bold text-uppercase mb-3">Pilares Educativos</h6>
+            <h2 class="display-6 fw-bold mb-5">Valores Institucionales</h2>
+            <div class="row g-4 text-start">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-value p-4 bg-white">
+                        <div class="icon-box"><i class="bi bi-shield-check fs-3"></i></div>
+                        <h5>Rigor Epistémico</h5>
+                        <p class="small text-muted">Compromiso inquebrantable con la verdad científica y la solidez de las fuentes.</p>
                     </div>
-                    <div class="row text-center mt-3">
-                        <div class="col-4">
-                            <div class="p-2 border rounded bg-white">
-                                <i class="bi bi-file-earmark-arrow-up text-muted"></i>
-                                <p class="small mb-0 d-none d-md-block">Recibido</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-value p-4 bg-white">
+                        <div class="icon-box"><i class="bi bi-eye fs-3"></i></div>
+                        <h5>Neutralidad</h5>
+                        <p class="small text-muted">Abordar cada investigación desde una perspectiva pura (Epojé), sin prejuicios.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-value p-4 bg-white">
+                        <div class="icon-box"><i class="bi bi-cpu fs-3"></i></div>
+                        <h5>Holodidáctica</h5>
+                        <p class="small text-muted">Proceso integral que conecta al investigador, su cerebro y su entorno.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-value p-4 bg-white">
+                        <div class="icon-box"><i class="bi bi-mortarboard fs-3"></i></div>
+                        <h5>Ética Profesional</h5>
+                        <p class="small text-muted">Respeto absoluto a la propiedad intelectual y crecimiento del tesista.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5 pb-5 pt-2 overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
+        <div class="container">
+            <div class="bg-primary p-5 rounded-4 text-center text-white shadow-lg">
+                <h2 class="display-6 fw-bold mb-3">¿Tu tesis está estancada?</h2>
+                <p class="lead opacity-75 mb-4">No dejes que el tiempo pase. Vamos a darle la estructura que necesita hoy mismo.</p>
+                <a href="https://wa.me/58XXXXXXXXXX" class="btn btn-light btn-lg rounded-pill px-5 fw-bold hover-lift">
+                    Agendar Consultoría Gratuita
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="progreso-dashboard" class="section-padding bg-white">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-4">
+                    <h6 class="text-primary fw-bold text-uppercase mb-3">Gestión Inteligente</h6>
+                    <h2 class="display-5 fw-extrabold mb-4" style="font-weight: 800;">Tu Progreso</h2>
+                    <p class="lead text-muted">Visualiza el avance de tu investigación de forma transparente. Nuestro dashboard te permite conocer el estado exacto de tus correcciones sin necesidad de intermediarios.</p>
+                    <p class="text-muted small"><i class="bi bi-info-circle me-1"></i> Actualizado en tiempo real por tu asesor asignado.</p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow p-4 h-100 bg-light">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h5 class="fw-bold mb-0"><i class="bi bi-activity me-2 text-primary"></i>Estado de Corrección</h5>
+                            <span class="badge bg-primary px-3 py-2 rounded-pill">En Proceso</span>
+                        </div>
+                        <div class="progress mb-3" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 65%"></div>
+                        </div>
+                        <div class="row text-center mt-3">
+                            <div class="col-4">
+                                <div class="p-2 border rounded bg-white">
+                                    <i class="bi bi-file-earmark-arrow-up text-muted"></i>
+                                    <p class="small mb-0 d-none d-md-block">Recibido</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-2 border rounded bg-primary text-white shadow-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                    <p class="small mb-0 d-none d-md-block">Corrigiendo</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-2 border rounded bg-white opacity-50">
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                    <p class="small mb-0 d-none d-md-block">Finalizado</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="p-2 border rounded bg-primary text-white shadow-sm">
-                                <i class="bi bi-pencil-square"></i>
-                                <p class="small mb-0 d-none d-md-block">Corrigiendo</p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="p-2 border rounded bg-white opacity-50">
-                                <i class="bi bi-check-circle text-muted"></i>
-                                <p class="small mb-0 d-none d-md-block">Finalizado</p>
-                            </div>
-                        </div>
+                        <p class="mt-4 small text-muted mb-0"><i class="bi bi-info-circle me-1"></i> Tu asesor está revisando el Capítulo III. Tiempo estimado de entrega: 48 horas.</p>
                     </div>
-                    <p class="mt-4 small text-muted mb-0"><i class="bi bi-info-circle me-1"></i> Tu asesor está revisando el Capítulo III. Tiempo estimado de entrega: 48 horas.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="repositorio-seccion" class="section-padding bg-light">
-    <div class="container">
-        <div class="row g-5 align-items-center flex-lg-row-reverse">
-            <div class="col-lg-5">
-                <h6 class="text-primary fw-bold text-uppercase mb-3">Biblioteca Personal</h6>
-                <h2 class="display-5 fw-extrabold mb-4" style="font-weight: 800;">Tus Archivos</h2>
-                <p class="lead text-muted">Accede a todas las versiones de tu trabajo en un solo lugar. Olvídate de buscar entre hilos de correos electrónicos.</p>
-                <p class="text-muted">Descarga borradores previos, guías de corrección y tu versión final lista para la defensa con un solo clic.</p>
-            </div>
-            <div class="col-lg-7">
-                <div class="card border-0 shadow p-4 bg-white" style="border-radius: 16px;">
-                    <h5 class="fw-bold mb-4"><i class="bi bi-cloud-download me-2 text-primary"></i>Repositorio Reciente</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-0 bg-transparent">
+    <section id="repositorio-seccion" class="section-padding bg-light overflow-hidden">
+        <div class="container overflow-hidden">
+            <div class="row g-5 align-items-center flex-lg-row-reverse">
+
+                <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1000">
+                    <h6 class="text-primary fw-bold text-uppercase mb-3">Biblioteca Personal</h6>
+                    <h2 class="display-5 fw-extrabold mb-4" style="font-weight: 800;">Tus Archivos</h2>
+                    <p class="lead text-muted">Accede a todas las versiones de tu trabajo en un solo lugar. Olvídate de buscar entre hilos de correos electrónicos.</p>
+                    <p class="text-muted">Descarga borradores previos, guías de corrección y tu versión final lista para la defensa con un solo clic.</p>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-up-right" data-aos-duration="1100">
+                    <div class="card border-0 shadow p-4 bg-white" style="border-radius: 16px;">
+                        <h5 class="fw-bold mb-4"><i class="bi bi-cloud-download me-2 text-primary"></i>Repositorio Reciente</h5>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center px-0 bg-transparent" 
+                            data-aos="fade-up" data-aos-delay="400">
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-filetype-pdf fs-4 me-3 text-danger"></i>
                                 <div>
@@ -287,75 +293,89 @@
                             </div>
                             <a href="#" class="btn btn-sm btn-outline-dark border-0"><i class="bi bi-download"></i></a>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-0 bg-transparent">
-                            <div class="d-flex align-items-center">
-                                <i class="bi bi-filetype-docx fs-4 me-3 text-primary"></i>
-                                <div>
-                                    <h6 class="mb-0 small fw-bold">Capitulo_II_Revision.docx</h6>
-                                    <span class="text-muted" style="font-size: 0.75rem;">10 Mar 2026</span>
-                                </div>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0 bg-transparent"
+                        data-aos="fade-up" data-aos-delay="600">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-filetype-docx fs-4 me-3 text-primary"></i>
+                            <div>
+                                <h6 class="mb-0 small fw-bold">Capitulo_II_Revision.docx</h6>
+                                <span class="text-muted" style="font-size: 0.75rem;">10 Mar 2026</span>
                             </div>
-                            <a href="#" class="btn btn-sm btn-outline-dark border-0"><i class="bi bi-download"></i></a>
-                        </li>
-                    </ul>
-                    <button class="btn btn-dark w-100 mt-4 py-2" style="border-radius: 8px;">Ver historial completo</button>
-                </div>
-            </div>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-dark border-0"><i class="bi bi-download"></i></a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-dark w-100 mt-4 py-2" 
+                style="border-radius: 8px;"
+                data-aos="zoom-in" data-aos-delay="800">
+                Ver historial completo
+            </button>
         </div>
     </div>
+</div>
+</div>
 </section>
 
-<section id="comunicacion-seccion" class="section-padding bg-white">
-    <div class="container">
-        <div class="text-center mb-5">
+<section id="comunicacion-seccion" class="section-padding bg-white overflow-hidden">
+    <div class="container overflow-hidden">
+        <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
             <h6 class="text-primary fw-bold text-uppercase mb-3">Comunicación Directa</h6>
             <h2 class="display-5 fw-extrabold" style="font-weight: 800;">Asesoría a tu Medida</h2>
         </div>
 
         <div class="row g-4">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
                 <div class="p-4 mb-4">
                     <h3 class="fw-bold h4">Consultas Express</h3>
                     <p class="text-muted">Resuelve dudas rápidas sobre normas APA, metodología o redacción en tiempo récord a través de nuestro chat interno.</p>
                 </div>
-                <div class="card border-0 shadow p-4" style="background: #eef2f7; border-radius: 16px;">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-chat-dots me-2 text-primary"></i>Chat con Asesor</h5>
-                    <div class="chat-box mb-3 p-3 bg-white rounded shadow-sm small" style="height: 150px; overflow-y: auto;">
-                        <div class="text-end mb-2">
-                            <span class="bg-primary text-white p-2 rounded-3 d-inline-block">¿Cómo cito esta fuente en APA 7?</span>
-                        </div>
-                        <div class="text-start mb-2">
-                            <span class="bg-light border p-2 rounded-3 d-inline-block">¡Hola! Usa (Autor, año, p. xx) si es cita textual.</span>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <input type="text" class="form-control form-control-sm border-0 shadow-none" placeholder="Escribe tu duda...">
-                        <button class="btn btn-primary btn-sm"><i class="bi bi-send"></i></button>
-                    </div>
-                </div>
-            </div>
+                <div class="card border-0 shadow p-4" 
+                style="background: #eef2f7; border-radius: 16px;" 
+                data-aos="zoom-in-up" data-aos-delay="400">
+                <h5 class="fw-bold mb-3"><i class="bi bi-chat-dots me-2 text-primary"></i>Chat con Asesor</h5>
 
-            <div class="col-lg-6">
-                <div class="p-4 mb-4">
-                    <h3 class="fw-bold h4">Sesiones Privadas</h3>
-                    <p class="text-muted">Sincroniza tu agenda con la de nuestros expertos. Elige el tiempo que necesites y asegura tu espacio para una revisión profunda.</p>
-                </div>
-                <div class="card border-0 shadow p-4 bg-dark text-white" style="border-radius: 16px; height:290px;">
-                    <h5 class="fw-bold mb-3 text-white"><i class="bi bi-calendar3 me-2 text-primary"></i>Agendar Sesión</h5>
-                    <p class="small opacity-75">Reserva una asesoría personalizada vía Zoom o presencial.</p>
-                    <div class="d-grid gap-2 mt-3">
-                        <button class="btn btn-outline-light btn-sm text-start p-2">
-                            <i class="bi bi-clock me-2"></i> 15 Minutos (Dudas rápidas)
-                        </button>
-                        <button class="btn btn-outline-light btn-sm text-start p-2">
-                            <i class="bi bi-camera-video me-2"></i> 30 Minutos (Revisión profunda)
-                        </button>
+                <div class="chat-box mb-3 p-3 bg-white rounded shadow-sm small" style="height: 150px; overflow-y: auto;">
+                    <div class="text-end mb-2" data-aos="fade-left" data-aos-delay="800">
+                        <span class="bg-primary text-white p-2 rounded-3 d-inline-block">¿Cómo cito esta fuente en APA 7?</span>
                     </div>
-                    <a href="#" class="btn btn-primary mt-4 py-2">Abrir Calendario</a>
+                    <div class="text-start mb-2" data-aos="fade-right" data-aos-delay="1200">
+                        <span class="bg-light border p-2 rounded-3 d-inline-block">¡Hola! Usa (Autor, año, p. xx) si es cita textual.</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-sm border-0 shadow-none" placeholder="Escribe tu duda...">
+                    <button class="btn btn-primary btn-sm"><i class="bi bi-send"></i></button>
                 </div>
             </div>
         </div>
+
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+            <div class="p-4 mb-4">
+                <h3 class="fw-bold h4">Sesiones Privadas</h3>
+                <p class="text-muted">Sincroniza tu agenda con la de nuestros expertos. Elige el tiempo que necesites y asegura tu espacio para una revisión profunda.</p>
+            </div>
+            <div class="card border-0 shadow p-4 bg-dark text-white" 
+            style="border-radius: 16px; height:290px;" 
+            data-aos="zoom-in-up" data-aos-delay="600">
+            <h5 class="fw-bold mb-3 text-white"><i class="bi bi-calendar3 me-2 text-primary"></i>Agendar Sesión</h5>
+            <p class="small opacity-75">Reserva una asesoría personalizada vía Zoom o presencial.</p>
+
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-outline-light btn-sm text-start p-2">
+                    <i class="bi bi-clock me-2"></i> 15 Minutos (Dudas rápidas)
+                </button>
+                <button class="btn btn-outline-light btn-sm text-start p-2">
+                    <i class="bi bi-camera-video me-2"></i> 30 Minutos (Revisión profunda)
+                </button>
+            </div>
+            <a href="#" class="btn btn-primary mt-4 py-2">Abrir Calendario</a>
+        </div>
     </div>
+</div>
+</div>
 </section>
 
 <section id="pagos-seccion" class="section-padding bg-light">
@@ -508,12 +528,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="carousel-indicators position-relative mt-4" style="margin-top:-100px;">
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active rounded-circle" style="width: 12px; height: 12px;"></button>
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="rounded-circle" style="width: 12px; height: 12px;"></button>
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="rounded-circle" style="width: 12px; height: 12px;"></button>
-            </div>
         </div>
     </div>
 </section>
@@ -559,7 +573,15 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+</script>
 </body>
 </html>
